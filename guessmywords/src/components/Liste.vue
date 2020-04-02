@@ -24,7 +24,7 @@ let data = {
 }
 
 export default {
-  name: 'Screen',
+  name: 'Liste',
   methods : {
     getPays() {
       return this.$store.state.pays

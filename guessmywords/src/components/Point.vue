@@ -4,7 +4,7 @@
      'left: '+ (pays.x - pays.width/2) + '%;' +
       'top: '+ (pays.y - pays.width/2) + '%;' +
       'width:' + pays.width + '%;' +
-      'opacity:' + (pays.find ? 1 : 0) + ';'"
+      'opacity:' + (pays.find ? 1 : 1) + ';'"
       @click="setSelectedPays"/>
 </template>
 
