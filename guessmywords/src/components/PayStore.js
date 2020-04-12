@@ -1,10 +1,13 @@
 import Vuex from 'vuex'
 import Vue from 'vue'
+import data from '../../public/video_game.js'
+// let data = require().default
+console.log(data)
 
 Vue.use(Vuex)
 
 const state = {
-  pays: [],
+pays: data,
   selectedPays: -1
 }
 

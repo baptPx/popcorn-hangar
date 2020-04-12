@@ -1,6 +1,6 @@
 <template>
   <div id="ListePays">
-    <h1>Pays {{ getPays().filter(pays => pays.find).length }} / 34 </h1>
+    <h1>jeu vidéo {{ getPays().filter(pays => pays.find).length }} / 34 </h1>
     <ul>
       <li v-for="(pays, i) of getPays()" :key="i" :class="{ isSelect : i === selectedPays, hide: !pays.find}"
       @click="setSelectedPays(selectedPays !== i ? i : -1)" > {{ pays.nom }} - {{ pays.reg }}</li>
@@ -8,7 +8,7 @@
     <div v-if="canShow()">
       <label for="nom">Nom </label>
       <input type="text" id="nom" v-model="nom" /><br>
-      <button @click="selectAnswer">Ajouter un pays</button>
+      <button @click="selectAnswer">Ajouter un jeu vidéo</button>
       <p v-if="showError">Eh non, c'est pas ça ;-)</p>
     </div>
     <p class="success" v-if="success">Bravo ! tu as trouvé une réponse !</p>

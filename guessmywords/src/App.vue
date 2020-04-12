@@ -1,19 +1,19 @@
 <template>
   <div id="app">
     <Screen />
-    <Liste />
+    <ListPlay />
   </div>
 </template>
 
 <script>
 import Screen from './components/Screen.vue'
-import Liste from './components/Liste.vue'
+import ListPlay from './components/ListPlay.vue'
 
 export default {
   name: 'App',
   components: {
     Screen,
-    Liste
+    ListPlay
   }
 }
 </script>
